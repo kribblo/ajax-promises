@@ -52,6 +52,11 @@ ajaxPromises.get(url)
     .json(console.log)
     .catch(console.error);
 
+// Add custom header
+ajaxPromises.get(url, {headers: {Accept: 'application/json'}})
+    .json(console.log)
+    .catch(console.error);
+
 // See the headers
 ajaxPromises.get(url)
     .headers(console.log)
