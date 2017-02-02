@@ -9,6 +9,7 @@ function createRequest(url, options) {
     const request = new XMLHttpRequest();
     const method = options.method || 'GET';
     request.open(method, url);
+    request.withCredentials = options.withCredentials || false;
     addHeaders(request, options);
     return request;
 }

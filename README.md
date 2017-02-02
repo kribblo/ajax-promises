@@ -4,7 +4,12 @@ Small utility library for making common types of [AJAX requests](https://develop
 
 ## API
 
-All GET/POST methods take an optional `options` argument. It currently only supports the argument `headers` which is a key-value object of extra HTTP headers to send along. More options may follow. Note that `'Content-type'` is overwritten when doing POSTs.
+All GET/POST/HEAD methods take an optional `options` argument. Current options:
+
+* `headers` - a key-value object of extra HTTP headers to send along. Note that `'Content-type'` is overwritten when doing POSTs.
+* `withCredentials` - boolean, same as [request.withCredentials](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/withCredentials) (default: `false`).
+
+Method calls:
 
 * `get(url, options = {})` - GET url with options.
 * `post(url, data, options = {})` - POST data to url (with options) as `x-www-form-urlencoded`. This usually works for POSTing to most 
