@@ -80,6 +80,12 @@ function load(url, options) {
  * XMLHttpRequest to Promise wrapper, with JSON functionality built in.
  */
 const ajaxPromises = {
+
+    /**
+     * @property {String} version current version of ajaxPromises
+     */
+    version: '__VERSION__',
+
     /**
      * URL encode data for use as query string.
      */

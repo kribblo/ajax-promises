@@ -4,6 +4,8 @@ Small utility library for making common types of [AJAX requests](https://develop
 
 ## API
 
+* `ajaxPromises.version` contains current version of ajaxPromises.
+
 All GET/POST/HEAD methods take an optional `options` argument. Current options:
 
 * `headers` - a key-value object of extra HTTP headers to send along. Note that `'Content-type'` is overwritten when doing POSTs.
