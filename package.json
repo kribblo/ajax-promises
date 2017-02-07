@@ -1,62 +1,62 @@
 {
-    "name": "ajax-promises",
-    "version": "1.0.1",
-    "description": "Small utility library for making common types of AJAX requests and return a Promise + some extras.",
-    "main": "src/ajax-promises.js",
-    "files": [
-        "src/ajax-promises.js"
-    ],
-    "scripts": {
-        "clean": "rimraf dist",
-        "prebuild": "npm run lint && npm run clean && mkdirp dist",
-        "build": "npm run build-min && npm run build-dev",
-        "build-min": "browserify src/ajax-promises.js -s ajaxPromises -g uglifyify --debug | exorcist dist/ajax-promises.min.js.map > dist/ajax-promises.min.js",
-        "build-dev": "browserify src/ajax-promises.js -s ajaxPromises --debug > dist/ajax-promises.js",
-        "lint": "eslint src",
-        "prelint": "npm test",
-        "test": "tape test/*.js"
-    },
-    "keywords": [
-        "ajax",
-        "XMLHttpRequest",
-        "JSON",
-        "promise",
-        "promises"
-    ],
-    "author": "Kristoffer Lundén <kristoffer.lunde@gmail.com>",
-    "license": "ISC",
-    "devDependencies": {
-        "browserify": "^13.3.0",
-        "eslint": "^3.13.1",
-        "exorcist": "^0.4.0",
-        "mkdirp": "^0.5.1",
-        "rimraf": "^2.5.4",
-        "tape": "^4.6.3",
-        "uglifyify": "^3.0.4"
-    },
-    "dependencies": {
-        "babel-polyfill": "^6.16.0",
-        "babel-preset-es2015": "^6.16.0",
-        "babelify": "^7.3.0",
-        "browserify-versionify": "^1.0.6"
-    },
-    "browserify": {
-        "transform": [
-            "browserify-versionify",
-            "babelify"
-        ]
-    },
-    "babel": {
-        "presets": [
-            "es2015"
-        ]
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/kribblo/ajax-promises.git"
-    },
-    "bugs": {
-        "url": "https://github.com/kribblo/ajax-promises/issues"
-    },
-    "homepage": "https://github.com/kribblo/ajax-promises#readme"
+  "name": "ajax-promises",
+  "version": "1.0.2",
+  "description": "Small utility library for making common types of AJAX requests and return a Promise + some extras.",
+  "main": "src/ajax-promises.js",
+  "files": [
+    "src/ajax-promises.js"
+  ],
+  "scripts": {
+    "clean": "rimraf dist",
+    "prebuild": "npm run lint && npm run clean && mkdirp dist",
+    "build": "npm run build-min && npm run build-dev",
+    "build-min": "browserify src/ajax-promises.js -s ajaxPromises -g uglifyify --debug | exorcist dist/ajax-promises.min.js.map > dist/ajax-promises.min.js",
+    "build-dev": "browserify src/ajax-promises.js -s ajaxPromises --debug > dist/ajax-promises.js",
+    "lint": "eslint src",
+    "prelint": "npm test",
+    "test": "tape test/*.js"
+  },
+  "keywords": [
+    "ajax",
+    "XMLHttpRequest",
+    "JSON",
+    "promise",
+    "promises"
+  ],
+  "author": "Kristoffer Lundén <kristoffer.lunde@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^13.3.0",
+    "eslint": "^3.13.1",
+    "exorcist": "^0.4.0",
+    "mkdirp": "^0.5.1",
+    "rimraf": "^2.5.4",
+    "tape": "^4.6.3",
+    "uglifyify": "^3.0.4"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.16.0",
+    "babel-preset-es2015": "^6.16.0",
+    "babelify": "^7.3.0",
+    "browserify-versionify": "^1.0.6"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-versionify",
+      "babelify"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kribblo/ajax-promises.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kribblo/ajax-promises/issues"
+  },
+  "homepage": "https://github.com/kribblo/ajax-promises#readme"
 }
