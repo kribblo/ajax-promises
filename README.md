@@ -2,6 +2,8 @@
 
 Small utility library for making common types of [AJAX requests](https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started) and return [Promises](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise) + some extras.
 
+**NOTE:** This does more or less the same as the standard upcoming [fetch API](https://github.github.io/fetch/) and you probably want to use that instead. This repository mostly kept for historical purposes. :)
+
 ## API
 
 * `ajaxPromises.version` contains current version of ajaxPromises.
