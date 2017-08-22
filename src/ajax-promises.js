@@ -21,10 +21,12 @@ function addHandlers(request, resolve, reject) {
         } else {
             const error = Error(request.statusText || 'Unknown failure; possibly CORS');
             error.status = request.status;
+            error.request = request;
             reject(error);
         }
     };
     request.onerror = function(e) {
+        e.request = request;
         reject(e);
     };
 }

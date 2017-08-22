@@ -26,6 +26,10 @@ Method calls:
 GET/POST promises returned can, instead of using `.then()`, call `.json()` in the same way to parse the result first. This is just the same as calling `then(JSON.parse)`.
 
 The promises returned also have a `headers()` method which is a separate promise returning the headers of the request. If only the headers are of interest, use the `head()` method.
+
+### Error handling
+
+In case of errors, HTTP or otherwise, the error object in the catch clause will have the `XMLHttpRequest` object available as `e.request` for further inspection.
  
 ## Usage
 
