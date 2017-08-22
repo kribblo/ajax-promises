@@ -53,7 +53,7 @@ function load(url, options) {
         return new Promise((resolve, reject) => {
             executor = executor || resolve;
             request.onreadystatechange = function() {
-                if(this.readyState == this.HEADERS_RECEIVED) {
+                if(this.readyState === this.HEADERS_RECEIVED) {
                     executor(request.getAllResponseHeaders());
                 }
             };
