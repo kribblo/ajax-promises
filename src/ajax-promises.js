@@ -1,3 +1,5 @@
+var XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest;
+
 function addHeaders(request, options) {
     const headers = options.headers || {};
     for(let header in headers) {
